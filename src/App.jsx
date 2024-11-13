@@ -5,11 +5,13 @@ import Footer from './footer';
 
 function App() {
   return (
-  <><div className="App">
-  <header><Header></Header></header>
-  <Main></Main>
-  <Footer ></Footer>
-  </div></>
+  <div className="App">
+    <header>
+      <Header/>
+    </header>
+    <Main/>
+    <Footer/>
+  </div>
   )
 }
 
