@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import SearchButton from './searchButton.jsx'
+import LuckyButton from './luckyButton.jsx'
+import SearchBar from './searchBar.jsx'
+import Logotype from './logotype.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -11,15 +15,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 function Main () {
   return (
     <main>
-      <img
-        className="logo"
-        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-        alt="Google logo"
-      />
-      <input className="search-bar" type="search" />
+      <Logotype></Logotype>
+      <SearchBar></SearchBar>
       <div className="buttons">
-        <button>Google Search</button>
-        <button>Feeling Lucky</button>
+        <SearchButton></SearchButton>
+        <LuckyButton></LuckyButton>
       </div>
     </main>
   )
